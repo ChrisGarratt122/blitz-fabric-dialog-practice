@@ -1,10 +1,13 @@
-<link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.min.css" />
-<link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.components.min.css" />
-<script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/js/fabric.min.js"></script>
+<html>
 
-<div id="root">
+<head>
 
-</div>
+  <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.min.css" />
+  <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.components.min.css" />
+  <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/js/fabric.min.js"></script>
+
+</head>
+
   
   <div class="dialogExample">
     <div class="dialog">
@@ -17,7 +20,7 @@
             <span class="label">Option1</span>
           </label>
         </div>
-        <div class="checkBox">
+        <div class="checkbox">
           <input tabindex="-1" type="checkbox" class="checkBox-input">
           <label role="checkbox" class="checkBox-field" tabindex="0" aria-checked="false" name="checkboxa">
             <span class="label">Option2</span>
@@ -37,19 +40,19 @@
     <label class="dialogExample-label"></label>
   </div>
 
-<!-- <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/js/fabric.min.js"></script> -->
+</html>
 
-<!-- <script type="text/javascript">
+<script type="text/javascript">
   var dialogElements = document.querySelectorAll(".dialog");
   var dialogComponents = [];
   for (var i=0; i < dialogElements.length; i++) {
     (function() {
-      dialogComponents[i] = new fabric['Dialog'](dialogElements[i]);
+      dialogComponents[i] = new fabric['dialog'](dialogElements[i]);
     }());
   }
-</script> -->
+</script>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   (function() {
     var example = document.querySelector(".dialogExample");
     var button = example.querySelector(".dialogExample-button");
@@ -89,4 +92,6 @@
       dialogComponent.open();
     }
   }());
-</script>
+</script> -->
+
+</html>
