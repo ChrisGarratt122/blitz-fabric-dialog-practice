@@ -29,7 +29,7 @@ class App extends Component<AppProps, AppState> {
   }
 }
 
-render(<App />, document.getElementById('root'));
+// render(<App />, document.getElementById('root'));
 
 // var dialogElements = document.querySelectorAll(".dialog");
 // var dialogComponents = [];
