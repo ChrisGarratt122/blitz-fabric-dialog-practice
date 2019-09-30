@@ -1,8 +1,10 @@
 <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.min.css" />
 <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.components.min.css" />
-
+<script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/js/fabric.min.js"></script>
 
 <div id="root">
+
+</div>
   
   <div class="dialogExample">
     <div class="dialog">
@@ -34,19 +36,15 @@
     <button class="button dialogExample-button">Open Dialog</button>
     <label class="dialogExample-label"></label>
   </div>
-      
 
+<!-- <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/js/fabric.min.js"></script> -->
 
-</div>
-
-<script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/js/fabric.min.js"></script>
-
-<script>
+<script type="text/javascript">
   var dialogElements = document.querySelectorAll(".dialog");
-var dialogComponents = [];
-for (var i=0; i < dialogElements.length; i++) {
-  (function() {
-    dialogComponents[i] = new fabric['Dialog'](dialogElements[i]);
-  }());
-}
+  var dialogComponents = [];
+  for (var i=0; i < dialogElements.length; i++) {
+    (function() {
+      dialogComponents[i] = new fabric['Dialog'](dialogElements[i]);
+    }());
+  }
 </script>
