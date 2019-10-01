@@ -82,4 +82,4 @@ export class DialogBasicExample extends React.Component<{}, IDialogBasicExampleS
   };
 }
 
-render(<App />, document.getElementById('root'));
+render(<DialogBasicExample />, document.getElementById('root'));
