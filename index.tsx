@@ -1,4 +1,7 @@
-import * as React from 'react';
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+import Hello from './Hello';
+import './style.css';
 import * as Fabric from 'office-ui-fabric-react';
 import { Dialog, DialogType, DialogFooter } from 'office-ui-fabric-react';
 import { PrimaryButton, DefaultButton } from 'office-ui-fabric-react/lib/Button';
@@ -79,3 +82,5 @@ export class DialogBasicExample extends React.Component<{}, IDialogBasicExampleS
     this.setState({ isDraggable: !this.state.isDraggable });
   };
 }
+
+render(<App />, document.getElementById('root'));

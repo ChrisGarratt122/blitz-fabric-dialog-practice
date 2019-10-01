@@ -8,90 +8,13 @@
 
 </head>
 
-  
-  <div class="dialogExample">
-    <div class="dialog">
-      <div class="dialog-title">All emails together</div>
-      <div class="dialog-Content">
-        <p class="dialog-subText">Your Inbox has changed. No longer does it include favorites, it is a singular destination for your emails.</p>
-        <div class="checkBox">
-          <input tabindex="-1" type="checkbox" class="checkBox-input">
-          <label role="checkbox" class="checkBox-field" tabindex="0" aria-checked="false" name="checkboxa">
-            <span class="label">Option1</span>
-          </label>
-        </div>
-        <div class="checkbox">
-          <input tabindex="-1" type="checkbox" class="checkBox-input">
-          <label role="checkbox" class="checkBox-field" tabindex="0" aria-checked="false" name="checkboxa">
-            <span class="label">Option2</span>
-          </label>
-        </div>
-      </div>
-      <div class="dialog-actions">
-        <button class="button dialog-action button--primary">
-          <span class="button-label">Save</span>
-        </button>
-        <button class="button dialog-action">
-          <span class="button-label">Cancel</span>
-        </button>
-      </div>
+  <body>
+
+    <div id="root">
+
     </div>
-    <button class="button dialogExample-button">Open Dialog</button>
-    <label class="dialogExample-label"></label>
-  </div>
 
-</html>
+  </body>
 
-<script type="text/javascript">
-  var dialogElements = document.querySelectorAll(".dialog");
-  var dialogComponents = [];
-  for (var i=0; i < dialogElements.length; i++) {
-    (function() {
-      dialogComponents[i] = new fabric['dialog'](dialogElements[i]);
-    }());
-  }
-</script>
-
-<!-- <script type="text/javascript">
-  (function() {
-    var example = document.querySelector(".dialogExample");
-    var button = example.querySelector(".dialogExample-button");
-    var dialog = example.querySelector(".dialog");
-    var label = example.querySelector(".dialogExample-label")
-    var checkBoxElements = example.querySelectorAll(".checkBox");
-    var actionButtonElements = example.querySelectorAll(".dialog-action");
-    var checkBoxComponents = [];
-    var actionButtonComponents = [];
-    // Wire up the dialog
-    var dialogComponent = new fabric['dialog'](dialog);
-    // Wire up the checkBoxes
-    for (var i = 0; i < checkBoxElements.length; i++) {
-      checkBoxComponents[i] = new fabric['checkbox'](checkBoxElements[i]);
-    }
-    // Wire up the buttons
-    for (var i = 0; i < actionButtonElements.length; i++) {
-      actionButtonComponents[i] = new fabric['button'](actionButtonElements[i], actionHandler);
-    }
-    // When clicking the button, open the dialog
-    button.onclick = function() {
-      openDialog(dialog);
-    };
-    function actionHandler(event) {
-      var labelText = "";
-      var counter = 0;
-      for (var i = 0; i < checkBoxComponents.length; i++) {
-        if (checkBoxComponents[i].getValue()) {
-          counter++;
-        }
-      }
-      labelText += counter + " option(s) selected. " + this.innerText.trim() + " clicked";
-      label.innerText = labelText;
-    }
-    function openDialog(dialog) {
-      // Open the dialog
-      dialogComponent.open();
-    }
-  }());
-</script> -->
 
 </html>
