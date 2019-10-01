@@ -2,4 +2,6 @@ $fontstack: Helvetica, sans-serif;
 $textcolor:white;
 $primarycolor: #2329D9;
 
-
+Dialog {
+  background-color: $primarycolor;
+}
