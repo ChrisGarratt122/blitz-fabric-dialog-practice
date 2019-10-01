@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import './style.css';
+import './stylings/style.css';
 import * as Fabric from 'office-ui-fabric-react';
 import { Dialog, DialogType, DialogFooter } from 'office-ui-fabric-react';
 import { PrimaryButton, DefaultButton } from 'office-ui-fabric-react/lib/Button';
