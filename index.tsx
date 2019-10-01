@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import './stylings/style.css';
 import './stylings/dialog.scss';
+import './stylings/page.scss'
 import * as Fabric from 'office-ui-fabric-react';
 import { Dialog, DialogType, DialogFooter } from 'office-ui-fabric-react';
 import { PrimaryButton, DefaultButton } from 'office-ui-fabric-react/lib/Button';
@@ -46,7 +47,6 @@ export class DialogBasicExample extends React.Component<{}, IDialogBasicExampleS
         </label>
 
         <Dialog
-          className={"style-dialog"}
           hidden={hideDialog}
           onDismiss={this._closeDialog}
           dialogContentProps={{
